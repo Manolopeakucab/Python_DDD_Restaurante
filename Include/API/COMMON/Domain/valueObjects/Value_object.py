@@ -11,6 +11,7 @@ class ValueObject(ABC,Generic[T]):
     @abstractmethod
     def valid(self)->bool:
         pass
-
+    
+    
     def get_value(self) -> T:
         return self
