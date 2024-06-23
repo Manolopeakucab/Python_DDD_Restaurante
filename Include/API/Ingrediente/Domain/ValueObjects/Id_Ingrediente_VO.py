@@ -16,9 +16,9 @@ class Id_Ingrediente_VO(Value_object):
     def valid(self) -> bool:
         return self._id_ingrediente > 0
     
-    def get_value(self) -> int:
+    def get_value(self) -> str:
         return self
     
     staticmethod
-    def create(id_ingrediente: int) -> 'Id_Ingrediente_VO':
+    def create(id_ingrediente: str) -> 'Id_Ingrediente_VO':
         return Id_Ingrediente_VO(id_ingrediente)
