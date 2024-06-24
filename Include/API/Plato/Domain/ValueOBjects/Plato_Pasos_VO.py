@@ -1,8 +1,9 @@
-from COMMON.Domain.valueObjects import ValueObject
+from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import ValueObject
+from typing import List
 
 class Plato_Pasos_VO(ValueObject):
     
-    pasos = []
+    pasos = List[str]
 
     def __init__(self, nombre):
         nombre = Plato_Pasos_VO.equals(nombre)

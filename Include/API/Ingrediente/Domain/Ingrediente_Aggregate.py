@@ -1,7 +1,7 @@
-from COMMON.Domain.aggregates.Aggregates import AggregateRoot
-from Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
-from Ingrediente.Domain.ValueObjects.Nombre_ingrediente_VO import Nombre_Ingrediente_VO
-from Ingrediente.Domain.DomainEvent.Ingrediente_Creado_Event import Ingrediente_Creado_Event
+from DDDAPI.Include.API.COMMON.Domain.aggregates.Aggregates import AggregateRoot
+from DDDAPI.Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
+from DDDAPI.Include.API.Ingrediente.Domain.ValueObjects.Nombre_ingrediente_VO import Nombre_Ingrediente_VO
+from DDDAPI.Include.API.Ingrediente.Domain.DomainEvent.Ingrediente_Creado_Event import Ingrediente_Creado_Event
 
 class Ingrediente(AggregateRoot):
     
