@@ -1,6 +1,6 @@
 from abc import ABC
 from typing import List
-from domainevents.Domain_Event import DomainEvent  # Assuming "domainevent.py" is in the same directory
+from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent 
 
 class AggregateRoot(ABC):
 
@@ -12,7 +12,7 @@ class AggregateRoot(ABC):
 
     def get_uncommitted_events(self) -> List[DomainEvent]:
 
-        return self._events  # Return a copy to avoid modifying internal state
+        return self._events  
 
     def clear_events(self) -> None:
 
