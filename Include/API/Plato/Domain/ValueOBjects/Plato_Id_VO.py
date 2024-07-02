@@ -16,6 +16,9 @@ class Id_Plato_VO(ValueObject):
     
     def valid(self) -> bool:
         return len(self.id_plato) != 0
+    
+    def get_id(self) -> str:
+        return self.id_plato
 
     @staticmethod
     def create(id_plato: str) -> 'Id_Plato_VO':

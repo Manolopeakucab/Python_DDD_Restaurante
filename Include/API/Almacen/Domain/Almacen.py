@@ -4,7 +4,7 @@ from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Nombre_VO import Nombre_Alma
 from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
 from DDDAPI.Include.API.Almacen.Domain.Events.Almacen_Creado import Almacen_Creado
 from DDDAPI.Include.API.Almacen.Domain.Events.Ingrediente_Agregado_event import Ingrediente_Agregado_event
-
+from DDDAPI.Include.API.Almacen.Domain.Events.Ingrediente_Modificado_event import Ingrediente_Modificado_event
 class Almacen(Aggregate):
 
     id: Id_Almacen_VO
@@ -33,5 +33,13 @@ class Almacen(Aggregate):
       
 
     @staticmethod
-    def create(id_almacen: Id_Almacen_VO, nombre: Nombre_Almacen_VO, ingredientes: Cantidad_Ingrediente_VO) -> 'Almacen':
+    async def create(id_almacen: Id_Almacen_VO, nombre: Nombre_Almacen_VO, ingredientes: Cantidad_Ingrediente_VO) -> 'Almacen':
         return Almacen(id_almacen, nombre, ingredientes)
+    
+    @staticmethod
+    async def Ingrediente_add(id_almacen: Id_Almacen_VO,id_ingrediente: Cantidad_Ingrediente_VO, cantidad: Cantidad_Ingrediente_VO) -> 'Ingrediente_Agregado_event':
+        return Ingrediente_Agregado_event(id_almacen,id_ingrediente, cantidad)
+    
+    @staticmethod
+    async def Ingrediente_delete(id_almacen: Id_Almacen_VO,id_ingrediente: Cantidad_Ingrediente_VO, cantidad: Cantidad_Ingrediente_VO) -> 'Ingrediente_Modificado_event':
+        return Ingrediente_Modificado_event(id_almacen,id_ingrediente,cantidad)

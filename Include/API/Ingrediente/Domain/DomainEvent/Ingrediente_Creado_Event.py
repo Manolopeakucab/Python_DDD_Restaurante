@@ -9,5 +9,6 @@ class Ingrediente_Creado_Event(DomainEvent):
         self._nombre = nombre
 
     staticmethod
-    def create(id_ingrediente: Id_Ingrediente_VO, nombre: Nombre_Ingrediente_VO) -> 'Ingrediente_Creado_Event':
+    def create(self,id_ingrediente: Id_Ingrediente_VO, nombre: Nombre_Ingrediente_VO) -> 'Ingrediente_Creado_Event':
+        self.publish(self,'Ingrediente añadido')
         return Ingrediente_Creado_Event(id_ingrediente, nombre)

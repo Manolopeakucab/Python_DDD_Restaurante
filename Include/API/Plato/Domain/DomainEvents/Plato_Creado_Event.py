@@ -13,5 +13,6 @@ class Plato_Creado_Event(DomainEvent):
         self._pasos = pasos
 
     staticmethod
-    def create(id_plato: Plato_Id_VO, nombre: Plato_Nombre_VO, ingredientes:Plato_Ingredientes_VO, pasos: Plato_Pasos_VO) -> 'Plato_Creado_Event':
+    def create(self,id_plato: Plato_Id_VO, nombre: Plato_Nombre_VO, ingredientes:Plato_Ingredientes_VO, pasos: Plato_Pasos_VO) -> 'Plato_Creado_Event':
+        self.publish(self,'Plato creado')
         return Plato_Creado_Event(id_plato, nombre, ingredientes, pasos)

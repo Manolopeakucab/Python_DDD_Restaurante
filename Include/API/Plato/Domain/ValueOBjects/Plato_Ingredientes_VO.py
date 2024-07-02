@@ -16,5 +16,8 @@ class Plato_Ingredientes_VO(ValueObject):
     def equals(self, other: 'Plato_Ingredientes_VO') -> bool:
         return self.ingredientes == other.ingredientes
     
+    def get_ingredientes(self) -> List[Id_Ingrediente_VO]:
+        return self
+    
     def valid(self) -> bool:
         return len(self.ingredientes) > 0

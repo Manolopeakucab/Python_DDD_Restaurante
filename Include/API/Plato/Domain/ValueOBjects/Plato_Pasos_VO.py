@@ -17,3 +17,10 @@ class Plato_Pasos_VO(ValueObject):
     
     def valid(self) -> bool:
         return len(self.pasos) > 0
+    
+    def get_pasos(self) -> List[str]:
+        return self 
+    
+    @staticmethod
+    def create(pasos: List[str]) -> 'Plato_Pasos_VO':
+        return Plato_Pasos_VO(pasos)

@@ -16,3 +16,10 @@ class Plato_Nombre_VO(ValueObject):
     
     def valid(self) -> bool:
         return len(self.nombre) > 0
+    
+    def get_nombre(self) -> str:
+        return self
+    
+    @staticmethod
+    def create(nombre: str) -> 'Plato_Nombre_VO':
+        return Plato_Nombre_VO(nombre)
