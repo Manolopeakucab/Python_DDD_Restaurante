@@ -3,7 +3,7 @@ from Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
 class Unidad_medida_ingrediente_VO(ValueObject):
     medida: int
 
-    def __init__(self, medida:int):
+    def __init__(self, medida:str):
         medida = Unidad_medida_ingrediente_VO.valid(medida);
         if medida is None:
             raise ValueError("La medidas del ingrediente no puede ser vacio")
