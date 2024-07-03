@@ -1,4 +1,4 @@
-from COMMON.Domain.valueObjects import Value_object;
+from Include.API.COMMON.Domain.valueObjects import Value_object;
 
 class Nombre_Ingrediente_VO(Value_object):
 
