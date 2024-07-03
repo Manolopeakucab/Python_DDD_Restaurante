@@ -1,4 +1,4 @@
-from COMMON.Domain.valueObjects import Value_object;
+from Include.API.COMMON.Domain.valueObjects import Value_object;
 
 class Id_Almacen_VO(Value_object):
 

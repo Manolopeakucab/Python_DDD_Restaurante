@@ -1,5 +1,5 @@
-from COMMON.Domain.valueObjects import Value_object;
-from Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO;
+from Include.API.COMMON.Domain.valueObjects import Value_object;
+from Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO;
 
 class Ingredientes_VO(Value_object):
 
