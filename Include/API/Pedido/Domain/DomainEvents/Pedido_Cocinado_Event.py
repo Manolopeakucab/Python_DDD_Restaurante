@@ -1,6 +1,6 @@
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.Platos_VO import Platos_VO
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
+from Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
+from Include.API.Pedido.Domain.ValueObjects.Platos_VO import Platos_VO
 
 class Pedido_Cocinado_Event(DomainEvent):
     

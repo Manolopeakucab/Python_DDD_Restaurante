@@ -1,5 +1,5 @@
-from DDDAPI.Include.API.COMMON.Domain.valueObjects import ValueObject
-from DDDAPI.Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
+from Include.API.COMMON.Domain.valueObjects import ValueObject
+from Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
 from typing import List
 
 class Plato_Ingredientes_VO(ValueObject):

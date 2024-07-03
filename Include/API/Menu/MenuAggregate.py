@@ -1,9 +1,9 @@
-from DDDAPI.Include.API.COMMON.Domain.aggregates.Aggregates import AggregateRoot
-from DDDAPI.Include.API.Menu.ValueObjects.ID_Menu_VO import Id_Menu_VO
-from DDDAPI.Include.API.Menu.ValueObjects.Nombre_VO import Nombre_Menu_VO
-from DDDAPI.Include.API.Menu.ValueObjects.Platos_VO import Platos_VO
-from DDDAPI.Include.API.Menu.DomainEvents.Menu_Created_Event import Menu_Created_Event
-from DDDAPI.Include.API.Menu.DomainEvents.Menu_Created_Event import Menu_Created_Event
+from Include.API.COMMON.Domain.aggregates.Aggregates import AggregateRoot
+from Include.API.Menu.ValueObjects.ID_Menu_VO import Id_Menu_VO
+from Include.API.Menu.ValueObjects.Nombre_VO import Nombre_Menu_VO
+from Include.API.Menu.ValueObjects.Platos_VO import Platos_VO
+from Include.API.Menu.DomainEvents.Menu_Created_Event import Menu_Created_Event
+from Include.API.Menu.DomainEvents.Menu_Created_Event import Menu_Created_Event
 
 class Menu(AggregateRoot):
     id: Id_Menu_VO

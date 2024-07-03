@@ -1,6 +1,6 @@
 from abc import ABC
 from typing import List
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent 
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent 
 
 class AggregateRoot(ABC):
 

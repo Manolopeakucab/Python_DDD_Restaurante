@@ -1,4 +1,4 @@
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import ValueObject
+from Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import ValueObject
 from typing import List
 
 class Plato_Pasos_VO(ValueObject):

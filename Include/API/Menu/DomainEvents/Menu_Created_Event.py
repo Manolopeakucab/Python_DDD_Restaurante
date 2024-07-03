@@ -1,7 +1,7 @@
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import Domain_Event
-from DDDAPI.Include.API.Menu.ValueObjects.Nombre_VO import Nombre_Menu_VO
-from DDDAPI.Include.API.Menu.ValueObjects.ID_Menu_VO import Id_Menu_VO
-from DDDAPI.Include.API.Menu.ValueObjects.Platos_VO import Platos_VO
+from Include.API.COMMON.Domain.domainevents.Domain_Event import Domain_Event
+from Include.API.Menu.ValueObjects.Nombre_VO import Nombre_Menu_VO
+from Include.API.Menu.ValueObjects.ID_Menu_VO import Id_Menu_VO
+from Include.API.Menu.ValueObjects.Platos_VO import Platos_VO
 
 class Menu_Created_Event(Domain_Event):
 

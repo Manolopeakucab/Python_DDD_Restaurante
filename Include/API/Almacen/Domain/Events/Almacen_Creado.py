@@ -1,7 +1,7 @@
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Id_Almacen_VO import Id_Almacen_VO
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Nombre_VO import Nombre_Almacen_VO
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
+from Include.API.Almacen.Domain.ValueObjects.Id_Almacen_VO import Id_Almacen_VO
+from Include.API.Almacen.Domain.ValueObjects.Nombre_VO import Nombre_Almacen_VO
+from Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
 
 
 class Almacen_Creado(DomainEvent):

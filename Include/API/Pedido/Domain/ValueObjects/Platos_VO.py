@@ -1,5 +1,5 @@
-from DDDAPI.Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
+from Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
+from Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
 
 class Platos_VO(ValueObject):
     

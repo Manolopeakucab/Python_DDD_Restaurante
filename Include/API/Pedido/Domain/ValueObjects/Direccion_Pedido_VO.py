@@ -1,4 +1,4 @@
-from DDDAPI.Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
+from Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
 
 class Direccion_Pedido_VO(ValueObject):
     

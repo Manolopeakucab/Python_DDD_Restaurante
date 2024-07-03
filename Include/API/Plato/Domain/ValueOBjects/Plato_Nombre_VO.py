@@ -1,4 +1,4 @@
-from   DDDAPI.Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
+from   Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
 
 class Plato_Nombre_VO(ValueObject):
     

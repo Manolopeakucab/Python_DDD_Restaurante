@@ -1,7 +1,7 @@
 from typing import Optional
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
-from DDDAPI.Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
-from DDDAPI.Include.API.Ingrediente.Domain.ValueObjects.Nombre_ingrediente_VO import Nombre_Ingrediente_VO
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
+from Include.API.Ingrediente.Domain.ValueObjects.Id_Ingrediente_VO import Id_Ingrediente_VO
+from Include.API.Ingrediente.Domain.ValueObjects.Nombre_ingrediente_VO import Nombre_Ingrediente_VO
 from Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
 from Include.API.Almacen.Domain.ValueObjects.Id_Almacen_VO import Id_Almacen_VO
 class Ingrediente_Modificado_Event(DomainEvent):

@@ -1,9 +1,9 @@
-from DDDAPI.Include.API.COMMON.Domain.aggregates.Aggregates import AggregateRoot
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Ingredientes_VO import Plato_Ingredientes_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Nombre_VO import Plato_Nombre_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import Plato_Pasos_VO 
-from DDDAPI.Include.API.Plato.Domain.DomainEvents.Plato_Creado_Event import Plato_Creado_Event
+from Include.API.COMMON.Domain.aggregates.Aggregates import AggregateRoot
+from Include.API.Plato.Domain.ValueOBjects.Plato_Ingredientes_VO import Plato_Ingredientes_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Nombre_VO import Plato_Nombre_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import Plato_Pasos_VO 
+from Include.API.Plato.Domain.DomainEvents.Plato_Creado_Event import Plato_Creado_Event
 
 
 class Plato(AggregateRoot):

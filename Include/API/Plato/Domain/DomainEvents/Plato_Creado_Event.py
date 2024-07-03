@@ -1,8 +1,8 @@
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Nombre_VO import Plato_Nombre_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Ingredientes_VO import Plato_Ingredientes_VO
-from DDDAPI.Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import Plato_Pasos_VO
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
+from Include.API.Plato.Domain.ValueOBjects.Plato_Id_VO import Plato_Id_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Nombre_VO import Plato_Nombre_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Ingredientes_VO import Plato_Ingredientes_VO
+from Include.API.Plato.Domain.ValueOBjects.Plato_Pasos_VO import Plato_Pasos_VO
 
 class Plato_Creado_Event(DomainEvent):
     def __init__(self, id_plato: Plato_Id_VO, nombre: Plato_Nombre_VO, ingredientes:Plato_Ingredientes_VO, pasos: Plato_Pasos_VO):

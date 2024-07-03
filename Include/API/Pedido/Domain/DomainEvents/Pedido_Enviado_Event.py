@@ -1,5 +1,5 @@
-from DDDAPI.Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
+from Include.API.COMMON.Domain.domainevents.Domain_Event import DomainEvent
+from Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
 
 class Pedido_Enviado_Event(DomainEvent):
     

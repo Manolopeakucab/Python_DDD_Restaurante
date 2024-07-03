@@ -1,4 +1,4 @@
-from DDDAPI.Include.API.COMMON.Domain.valueObjects import ValueObject
+from Include.API.COMMON.Domain.valueObjects import ValueObject
 
 class Nombre_Menu_VO(ValueObject):
     

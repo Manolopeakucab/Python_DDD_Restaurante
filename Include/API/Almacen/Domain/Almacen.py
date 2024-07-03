@@ -1,10 +1,10 @@
-from DDDAPI.Include.API.COMMON.Domain.aggregates.Aggregates import Aggregate
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Id_Almacen_VO import Id_Almacen_VO
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Nombre_VO import Nombre_Almacen_VO
-from DDDAPI.Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
-from DDDAPI.Include.API.Almacen.Domain.Events.Almacen_Creado import Almacen_Creado
-from DDDAPI.Include.API.Almacen.Domain.Events.Ingrediente_Agregado_event import Ingrediente_Agregado_event
-from DDDAPI.Include.API.Almacen.Domain.Events.Ingrediente_Modificado_event import Ingrediente_Modificado_event
+from Include.API.COMMON.Domain.aggregates.Aggregates import Aggregate
+from Include.API.Almacen.Domain.ValueObjects.Id_Almacen_VO import Id_Almacen_VO
+from Include.API.Almacen.Domain.ValueObjects.Nombre_VO import Nombre_Almacen_VO
+from Include.API.Almacen.Domain.ValueObjects.Cantidad_Ingrediente_VO import Cantidad_Ingrediente_VO
+from Include.API.Almacen.Domain.Events.Almacen_Creado import Almacen_Creado
+from Include.API.Almacen.Domain.Events.Ingrediente_Agregado_event import Ingrediente_Agregado_event
+from Include.API.Almacen.Domain.Events.Ingrediente_Modificado_event import Ingrediente_Modificado_event
 class Almacen(Aggregate):
 
     id: Id_Almacen_VO

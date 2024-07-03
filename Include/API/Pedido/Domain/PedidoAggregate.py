@@ -1,14 +1,14 @@
-from DDDAPI.Include.API.COMMON.Domain.aggregates.Aggregates import Aggregates
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.Total_Orden_VO import Total_Orden_VO
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.Direccion_Pedido_VO import Direccion_Pedido_VO
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.Estados_Orden_VO import Estados_Orden_VO
-from DDDAPI.Include.API.Pedido.Domain.ValueObjects.Platos_VO import Platos_VO
+from Include.API.COMMON.Domain.aggregates.Aggregates import Aggregates
+from Include.API.Pedido.Domain.ValueObjects.ID_Orden import ID_Orden
+from Include.API.Pedido.Domain.ValueObjects.Total_Orden_VO import Total_Orden_VO
+from Include.API.Pedido.Domain.ValueObjects.Direccion_Pedido_VO import Direccion_Pedido_VO
+from Include.API.Pedido.Domain.ValueObjects.Estados_Orden_VO import Estados_Orden_VO
+from Include.API.Pedido.Domain.ValueObjects.Platos_VO import Platos_VO
 
-from DDDAPI.Include.API.Pedido.Domain.DomainEvents.Pedido_Enviado_Event import Pedido_Enviado_Event
-from DDDAPI.Include.API.Pedido.Domain.DomainEvents.Pedido_pagado_Event import Pedido_pagado_Event
-from DDDAPI.Include.API.Pedido.Domain.DomainEvents.Pedido_Recibido_Event import Pedido_Recibido_Event
-from DDDAPI.Include.API.Pedido.Domain.DomainEvents.Pedido_Cocinado_Event import Pedido_Cocinado_Event
+from Include.API.Pedido.Domain.DomainEvents.Pedido_Enviado_Event import Pedido_Enviado_Event
+from Include.API.Pedido.Domain.DomainEvents.Pedido_pagado_Event import Pedido_pagado_Event
+from Include.API.Pedido.Domain.DomainEvents.Pedido_Recibido_Event import Pedido_Recibido_Event
+from Include.API.Pedido.Domain.DomainEvents.Pedido_Cocinado_Event import Pedido_Cocinado_Event
 
 class PedidoAggregate(Aggregates):
     def __init__(self, id: ID_Orden, total: Total_Orden_VO, direccion: Direccion_Pedido_VO, estado: Estados_Orden_VO, cantidad_platos: Platos_VO):

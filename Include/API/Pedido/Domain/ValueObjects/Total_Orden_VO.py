@@ -1,4 +1,4 @@
-from DDDAPI.Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
+from Include.API.COMMON.Domain.valueObjects.Value_object import ValueObject
 
 class Total_Orden_VO(ValueObject):
     def __init__(self, value: float):
